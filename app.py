@@ -2,8 +2,12 @@
 Source:
 Author: Raja CSP
 '''
-from flask import Flask,jsonify, request,\
+from flask import (
+    Flask,
+    jsonify,
+    request,
     render_template
+)
 
 import json
 
@@ -18,7 +22,7 @@ def api_base():
     # }
 
     # return jsonify(result)
-    #    return "helloworld"  
+    #    return "helloworld"
        return render_template('index.html')
 
 if __name__ == "__main__":
